@@ -1,7 +1,7 @@
 package api.test;
 
 import api.endpoints.AgencyEndPoints;
-import api.endpoints.AgencyEndPoints2;
+
 import api.payload.User;
 import com.github.javafaker.Faker;
 
@@ -57,7 +57,7 @@ public class AgencyTest {
 	@Test(priority = 1)
 	public void CreateAgency() throws FileNotFoundException {
 	
-		Response response = AgencyEndPoints2.CreateAgency();
+		Response response = AgencyEndPoints.CreateAgency();
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
 	}
@@ -65,7 +65,7 @@ public class AgencyTest {
 	@Test(priority = 2)
 	public void GetAgencyById() {
 //		AgencyEndPoints.GetAgency(this.UserPayload.getId());
-		Response response = AgencyEndPoints2.GetAgency();
+		Response response = AgencyEndPoints.GetAgency();
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
 

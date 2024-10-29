@@ -48,25 +48,25 @@ public class LeadTest {
 
 	}
 
-//	@Test
-//	public void GetLeadById() {
-////		AgencyEndPoints.GetAgency(this.UserPayload.getId());
-//		Response response = LeadEndPoints.GetLead();
-//		response.then().log().all();
-//		Assert.assertEquals(response.getStatusCode(), 200);
-//
-//		if (response.statusCode() == 404) {
-//			System.out.println("Endpoint not found. Check the URI and endpoint path.");
-//		} else {
-//			System.out.println("Response: " + response.asString());
-//		}
-//
-//	}
-//
-//	public void GetLeadList() {
-////		AgencyEndPoints.GetAgency(this.UserPayload.getId());
-//		Response response = LeadEndPoints.GetLeadList();
-//		response.then().log().all();
-//		Assert.assertEquals(response.getStatusCode(), 200);
+	@Test
+	public void GetLeadById() {
+//		AgencyEndPoints.GetAgency(this.UserPayload.getId());
+		Response response = LeadEndPoints.GetLead();
+		response.then().log().all();
+		Assert.assertEquals(response.getStatusCode(), 200);
 
+		if (response.statusCode() == 404) {
+			System.out.println("Endpoint not found. Check the URI and endpoint path.");
+		} else {
+			System.out.println("Response: " + response.asString());
+		}
+
+	}
+
+	public void GetLeadList() {
+//		AgencyEndPoints.GetAgency(this.UserPayload.getId());
+		Response response = LeadEndPoints.GetLeadList();
+		response.then().log().all();
+		Assert.assertEquals(response.getStatusCode(), 200);
+	}
 }

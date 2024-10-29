@@ -5,6 +5,7 @@ import static io.restassured.RestAssured.given;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.ResourceBundle;
 
 import org.json.JSONObject;
 import org.json.JSONTokener;
@@ -19,8 +20,12 @@ public class AgentEndPoints {
 	static GenerateBearerToken generate = new GenerateBearerToken();
 	static String Token = generate.Bearertoken();
 	
+	static ResourceBundle getURL() {
+		ResourceBundle routes =  ResourceBundle.getBundle("routes");
+		return routes;
+		}
 	public static Response CreateAgent() throws FileNotFoundException {
-		
+		String Post_agent =  getURL().getString("Post_agent");
 		File f = new File(
 				"C:\\Eclipse New\\NewWorkSpace\\TravelCrmApiAutomation\\testdata\\CreateAgentTestData.json");
 		FileReader fr = new FileReader(f);
@@ -28,23 +33,21 @@ public class AgentEndPoints {
 		JSONObject data = new JSONObject(jsonToken);
 		Response AgentResponse = given().header("Authorization", "Bearer " + Token)
 				.header("Content-Type", "application/json").body(data.toString()).when()
-				.post(Routes.Post_agent);
+				.post(Post_agent);
 		return AgentResponse;
 	}
 
 	public static Response GetAgent() {
-//		Response response = request.header("Authorization", "Bearer " + Token)
-//				.header("Content-Type", "application/json").when().get("/api/Agents/1");
-//		response.prettyPrint();
+		String get_agent =  getURL().getString("get_agent");
 		Response response = given().header("Authorization", "Bearer " + Token).pathParam("agentId", 1).contentType(ContentType.JSON).when()
-				.get(Routes.get_agent);
+				.get(get_agent);
 		return response;
 	}
 
 //	public static Response UpdateAgent(String AgencyId, String Payload) {
-//
+//String Put_agent =  getURL().getString("Put_agent");
 //		Response response = given().header("Authorization", "Bearer " + Token).pathParam("agencyId", AgencyId).contentType(ContentType.JSON)
-//				.accept(ContentType.TEXT).when().put(Routes.Put_agent);
+//				.accept(ContentType.TEXT).when().put(Put_agent);
 //		return response;
 //	}
 
