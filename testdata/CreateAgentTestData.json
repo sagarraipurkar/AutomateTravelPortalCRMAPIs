@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "name": "John Doe",
+  "email": "john@mailinator.com",
+  "primaryContactNumber": "8871488970",
+  "contactNumbers": [
+    "1234567890"
+  ],
+  "createdDate": "2024-10-16T06:00:12.633Z",
+  "updatedDate": "2024-10-16T06:00:12.633Z",
+  "code": "TS-201",
+  "customAttributes": {
+    "additionalProp1": "string",
+    "additionalProp2": "string",
+    "additionalProp3": "string"
+  },
+  "isActive": true,
+  "agencyCode": "TS123",
+  "branchCode": "TS123",
+  "roles": [
+    1 
+  ]
+} 

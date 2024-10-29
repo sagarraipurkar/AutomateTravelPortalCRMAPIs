@@ -1,0 +1,38 @@
+{
+  "code": "T101",
+  "name": "Demo Travel Company",
+  "addressDetails": "City woods, Shop 18 opp Gool Poonawalla Garden, Salisbury Park",
+  "city": "Pune",
+  "region": "Maharashtra",
+  "postalCode": "411037",
+  "country": "India",
+  "agency" : "null",
+  "agencies": [
+   {
+          "value": "<Circular reference to #/components/schemas/Agency detected>"
+        },
+        {
+          "value": "<Circular reference to #/components/schemas/Agency detected>"
+        }
+  ],
+  "branches": [
+    {
+      "code": "T101",
+      "name": "Demo Travel Company Kalyani Nagar",
+      "addressDetails": "City woods, Shop 18 opp Gool Poonawalla Garden, Salisbury Park",
+      "city": "Pune",
+      "region": "Kalyani Nagar",
+      "postalCode": "411037",
+      "country": "India",
+      "agencies": [
+        {
+          "value": "<Circular reference to #/components/schemas/Agency detected>"
+        },
+        {
+          "value": "<Circular reference to #/components/schemas/Agency detected>"
+        }
+      ],
+      "agencyId": "101"
+    }
+  ]
+}

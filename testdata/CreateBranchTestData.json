@@ -1,0 +1,19 @@
+{
+  "id": "10",
+  "code": "TS123",
+  "name": "Techspian Services Private Limited II",
+  "addressDetails": "MARISOFT-1, 303, Marigold Premises, Kalyani Nagar, Pune, Maharashtra 411014",
+  "city": "Pune",
+  "region": "Kalyani Nagar",
+  "postalCode": "411014 ",
+  "country": "India",
+  "agencies": [
+    {
+      "value": "<Circular reference to #/components/schemas/Agency detected>"
+    },
+    {
+      "value": "<Circular reference to #/components/schemas/Agency detected>"
+    }
+  ],
+  "agencyId": "0"
+}
