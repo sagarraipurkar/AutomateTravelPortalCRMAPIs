@@ -9,7 +9,6 @@
       <class name="api.test.AgencyTest">
         <methods>
           <include name="CreateAgency"/>
-          <include name="GetAgencyById"/>
         </methods>
       </class> <!-- api.test.AgencyTest -->
       <class name="api.test.AgentTest">

@@ -9,13 +9,12 @@ import java.util.ResourceBundle;
 
 import org.json.JSONObject;
 import org.json.JSONTokener;
-
-import authorization.GenerateBearerToken;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import token.TokenGenerate;
 
 public class BranchEndPoints {
-	static GenerateBearerToken generate = new GenerateBearerToken();
+	static TokenGenerate generate = new TokenGenerate();
 	static String Token = generate.Bearertoken();
 	
 	static ResourceBundle getURL() {

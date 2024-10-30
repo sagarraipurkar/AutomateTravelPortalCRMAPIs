@@ -9,7 +9,7 @@
     <test thread-count="5" name="Test">
         <classes>
             <class name="api.test.AgencyTest"/>
-            <class name="api.test.LeadTest"/>
+              <class name="api.test.LeadTest"/>
              <class name="api.test.AgentTest"/>
             <class name="api.test.BranchTest"/>
         </classes>

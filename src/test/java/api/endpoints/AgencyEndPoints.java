@@ -2,6 +2,8 @@ package api.endpoints;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import token.TokenGenerate;
+
 import static org.hamcrest.Matchers.*;
 
 import java.io.File;
@@ -15,14 +17,13 @@ import org.json.JSONTokener;
 
 import api.payload.User;
 import api.payload.branch;
-import authorization.GenerateBearerToken;
 import io.restassured.http.ContentType;
 import io.restassured.mapper.ObjectMapper;
 
 import static io.restassured.RestAssured.given;
 
 public class AgencyEndPoints {
-	static GenerateBearerToken generate = new GenerateBearerToken();
+	static TokenGenerate generate = new TokenGenerate();
 	static String Token = generate.Bearertoken();
 	
 	static ResourceBundle getURL() {

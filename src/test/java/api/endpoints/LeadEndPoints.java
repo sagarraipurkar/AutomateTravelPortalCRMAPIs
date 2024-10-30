@@ -5,13 +5,13 @@ import static io.restassured.RestAssured.given;
 import java.util.ResourceBundle;
 
 import api.payload.Lead;
-import authorization.GenerateBearerToken;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import token.TokenGenerate;
 
 public class LeadEndPoints {
 
-	static GenerateBearerToken generate = new GenerateBearerToken();
+	static TokenGenerate generate = new TokenGenerate();
 	static String Token = generate.Bearertoken();
 	
 	static ResourceBundle getURL() {

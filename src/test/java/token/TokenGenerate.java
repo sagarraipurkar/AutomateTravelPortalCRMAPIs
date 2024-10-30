@@ -16,10 +16,10 @@ public class TokenGenerate {
 		String Payload = "{\r\n" + "  \"email\": \"TS201@test1012.com\",\r\n" + "  \"password\": \"test\"\r\n" + "}";
 		request.header("Content-Type", "application/json");
 
-		Response ResponseFromGenerateToken = request.body(Payload).post("/api/Authentication/login");
-		ResponseFromGenerateToken.prettyPrint();
+		Response ResponseToken = request.body(Payload).post("/api/Authentication/login");
+		ResponseToken.prettyPrint();
 
-		String JsonString = ResponseFromGenerateToken.getBody().asString();
+		String JsonString = ResponseToken.getBody().asString();
 		;
 		String token = JsonString.trim();
 		System.out.println("The Token is" + " " + token);
