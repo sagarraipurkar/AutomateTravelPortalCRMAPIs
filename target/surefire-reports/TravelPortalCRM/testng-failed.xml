@@ -6,6 +6,11 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
+      <class name="api.test.LeadTest">
+        <methods>
+          <include name="testpostLead"/>
+        </methods>
+      </class> <!-- api.test.LeadTest -->
       <class name="api.test.AgentTest">
         <methods>
           <include name="CreateAgent"/>
@@ -16,11 +21,6 @@
           <include name="CreateAgency"/>
         </methods>
       </class> <!-- api.test.AgencyTest -->
-      <class name="api.test.LeadTest">
-        <methods>
-          <include name="testpostLead"/>
-        </methods>
-      </class> <!-- api.test.LeadTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TravelPortalCRM] -->
