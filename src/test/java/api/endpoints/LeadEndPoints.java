@@ -32,6 +32,13 @@ public class LeadEndPoints {
 		return response;
 
 	}
+	
+//	public static Response updateLeadbyID() {
+//		String Put_Lead =  getURL().getString("Put_Lead");
+//		Response response = given().header("Authorization", "Bearer " + Token).pathParam("leadId", 4)
+//				.contentType(ContentType.JSON).when().get(Put_Lead);
+//		return response;
+//	}
 
 	public static Response GetLeadList() {
 		String Put_Lead_list =  getURL().getString("Put_Lead_list");
@@ -39,4 +46,25 @@ public class LeadEndPoints {
 				.contentType(ContentType.JSON).when().get(Put_Lead_list);
 		return response;
 	}
+	
+//	public static Response LeadAssignbyId() {
+//	String Put_Lead_assign =  getURL().getString("Put_Lead_assign");
+//	Response response = given().header("Authorization", "Bearer " + Token).pathParam("leadId", 4)
+//			.contentType(ContentType.JSON).when().get(Put_Lead_assign);
+//	return response;
+//}
+	
+//	public static Response AddnoteLeadbyId() {
+//	String Put_Lead_addnotes =  getURL().getString("Put_Lead_addnotes");
+//	Response response = given().header("Authorization", "Bearer " + Token).pathParam("leadId", 4)
+//			.contentType(ContentType.JSON).when().get(Put_Lead_addnotes);
+//	return response;
+//}
+	
+//	public static Response sendproposalLeadById() {
+//	String Post_Lead_sendproposal =  getURL().getString("Post_Lead_sendproposal");
+//	Response response = given().header("Authorization", "Bearer " + Token).pathParam("leadId", 4)
+//			.contentType(ContentType.JSON).when().get(Post_Lead_sendproposal);
+//	return response;
+//}
 }

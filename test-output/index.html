@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-TravelPortalCRM" class="navigator-link">
+              <span class="suite-name border-failed">TravelPortalCRM</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\sagar raipurkar\AppData\Local\Temp\testng-eclipse-1390552133\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-TravelPortalCRM" class="navigator-link ">
+                    <span>C:\Eclipse New\NewWorkSpace\TravelCrmApiAutomation\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-TravelPortalCRM" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-TravelPortalCRM" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-TravelPortalCRM" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-TravelPortalCRM" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-TravelPortalCRM" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-TravelPortalCRM" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,60 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TravelPortalCRM" class="hide-methods failed suite-TravelPortalCRM"> (hide)</a> <!-- hide-methods failed suite-TravelPortalCRM -->
+                      <a href="#" panel-name="suite-TravelPortalCRM" class="show-methods failed suite-TravelPortalCRM"> (show)</a> <!-- show-methods failed suite-TravelPortalCRM -->
+                    </span>
+                    <div class="method-list-content failed suite-TravelPortalCRM">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TravelPortalCRM" title="api.test.AgencyTest" class="method navigator-link" hash-for-method="CreateAgency">CreateAgency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TravelPortalCRM" title="api.test.AgentTest" class="method navigator-link" hash-for-method="CreateAgent">CreateAgent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TravelPortalCRM -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-TravelPortalCRM" class="hide-methods passed suite-TravelPortalCRM"> (hide)</a> <!-- hide-methods passed suite-TravelPortalCRM -->
+                      <a href="#" panel-name="suite-TravelPortalCRM" class="show-methods passed suite-TravelPortalCRM"> (show)</a> <!-- show-methods passed suite-TravelPortalCRM -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-TravelPortalCRM">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="api.test.LeadTest" class="method navigator-link" hash-for-method="GetLeadById">GetLeadById</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TravelPortalCRM" title="api.test.BranchTest" class="method navigator-link" hash-for-method="CreateBranch">CreateBranch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TravelPortalCRM" title="api.test.AgencyTest" class="method navigator-link" hash-for-method="GetAgencyById">GetAgencyById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TravelPortalCRM" title="api.test.AgentTest" class="method navigator-link" hash-for-method="GetAgentById">GetAgentById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TravelPortalCRM" title="api.test.BranchTest" class="method navigator-link" hash-for-method="GetBranchByID">GetBranchByID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TravelPortalCRM" title="api.test.LeadTest" class="method navigator-link" hash-for-method="GetLeadById">GetLeadById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TravelPortalCRM -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,8 +156,70 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-TravelPortalCRM" class="panel TravelPortalCRM">
+          <div class="suite-TravelPortalCRM-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">api.test.AgencyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateAgency">
+                  </a> <!-- CreateAgency -->
+                  <span class="method-name">CreateAgency</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at api.test.AgencyTest.CreateAgency(AgencyTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TravelPortalCRM-class-failed -->
+          <div class="suite-TravelPortalCRM-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">api.test.AgentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateAgent">
+                  </a> <!-- CreateAgent -->
+                  <span class="method-name">CreateAgent</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at api.test.AgentTest.CreateAgent(AgentTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TravelPortalCRM-class-failed -->
+          <div class="suite-TravelPortalCRM-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.BranchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateBranch">
+                  </a> <!-- CreateBranch -->
+                  <span class="method-name">CreateBranch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetBranchByID">
+                  </a> <!-- GetBranchByID -->
+                  <span class="method-name">GetBranchByID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TravelPortalCRM-class-passed -->
+          <div class="suite-TravelPortalCRM-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">api.test.LeadTest</span>
@@ -132,98 +233,195 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-TravelPortalCRM-class-passed -->
+          <div class="suite-TravelPortalCRM-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.AgencyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAgencyById">
+                  </a> <!-- GetAgencyById -->
+                  <span class="method-name">GetAgencyById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TravelPortalCRM-class-passed -->
+          <div class="suite-TravelPortalCRM-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.AgentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAgentById">
+                  </a> <!-- GetAgentById -->
+                  <span class="method-name">GetAgentById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TravelPortalCRM-class-passed -->
+        </div> <!-- panel TravelPortalCRM -->
+        <div panel-name="test-xml-TravelPortalCRM" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\sagar raipurkar\AppData\Local\Temp\testng-eclipse-1390552133\testng-customsuite.xml</span>
+            <span class="header-content">C:\Eclipse New\NewWorkSpace\TravelCrmApiAutomation\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;TravelPortalCRM&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;api.Utilities.ExtentReportManager&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;api.test.AgencyTest&quot;/&gt;
       &lt;class name=&quot;api.test.LeadTest&quot;/&gt;
+      &lt;class name=&quot;api.test.AgentTest&quot;/&gt;
+      &lt;class name=&quot;api.test.BranchTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- TravelPortalCRM --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-TravelPortalCRM" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for TravelPortalCRM</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-TravelPortalCRM" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for TravelPortalCRM</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-TravelPortalCRM" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for TravelPortalCRM</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_TravelPortalCRM');
+function tableData_TravelPortalCRM() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'GetLeadById')
-data.setCell(0, 2, 'api.test.LeadTest')
-data.setCell(0, 3, 1455);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'CreateAgency')
+data.setCell(0, 2, 'api.test.AgencyTest')
+data.setCell(0, 3, 3497);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'GetLeadById')
+data.setCell(1, 2, 'api.test.LeadTest')
+data.setCell(1, 3, 777);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'CreateBranch')
+data.setCell(2, 2, 'api.test.BranchTest')
+data.setCell(2, 3, 638);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'GetAgentById')
+data.setCell(3, 2, 'api.test.AgentTest')
+data.setCell(3, 3, 510);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'CreateAgent')
+data.setCell(4, 2, 'api.test.AgentTest')
+data.setCell(4, 3, 506);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'GetBranchByID')
+data.setCell(5, 2, 'api.test.BranchTest')
+data.setCell(5, 3, 287);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'GetAgencyById')
+data.setCell(6, 2, 'api.test.AgencyTest')
+data.setCell(6, 3, 264);
+window.suiteTableData['TravelPortalCRM']= { tableData: data, tableDiv: 'times-div-TravelPortalCRM'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <div id="times-div-TravelPortalCRM">
+              </div> <!-- times-div-TravelPortalCRM -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-TravelPortalCRM" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for TravelPortalCRM</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-TravelPortalCRM" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-TravelPortalCRM" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">api.test.AgencyTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CreateAgency</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetAgencyById</span>
+                <span class="method-start">3517 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">api.test.LeadTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">GetLeadById</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">4639 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.AgentTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CreateAgent</span>
+                <span class="method-start">5419 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetAgentById</span>
+                <span class="method-start">5929 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.BranchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">CreateBranch</span>
+                <span class="method-start">6446 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetBranchByID</span>
+                <span class="method-start">7087 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

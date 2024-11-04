@@ -31,4 +31,32 @@ public class AgentTest {
 			System.out.println("Response: " + response.asString());
 		}
 	}
+
+//	@Test(priority = 2)
+//	public void UpdateAgentById() {
+////			AgencyEndPoints.GetAgency(this.UserPayload.getId());
+//		Response response = AgentEndPoints.UpdateAgent(null, null);
+//		response.then().log().all();
+//		Assert.assertEquals(response.getStatusCode(), 200);
+//
+//		if (response.statusCode() == 404) {
+//			System.out.println("Endpoint not found. Check the URI and endpoint path.");
+//		} else {
+//			System.out.println("Response: " + response.asString());
+//		}
+//	}
+//
+//	public void GetAgentList() {
+////			AgencyEndPoints.GetAgency(this.UserPayload.getId());
+//		Response response = AgentEndPoints.getAgentList(null, null);
+//		response.then().log().all();
+//		Assert.assertEquals(response.getStatusCode(), 200);
+//
+//		if (response.statusCode() == 404) {
+//			System.out.println("Endpoint not found. Check the URI and endpoint path.");
+//		} else {
+//			System.out.println("Response: " + response.asString());
+//		}
+//	}
+
 }

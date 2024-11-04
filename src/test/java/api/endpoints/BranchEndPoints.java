@@ -48,6 +48,12 @@ public class BranchEndPoints {
 //				.accept(ContentType.TEXT).when().put(Put_branch);
 //		return response;
 //	}
-
+	
+//	public static Response deleteBranch(String AgencyId, String Payload) {
+//String delete_branch =  getURL().getString("delete_branch");
+//		Response response = given().header("Authorization", "Bearer " + Token).pathParam("agencyId", AgencyId).contentType(ContentType.JSON)
+//				.accept(ContentType.TEXT).when().put(delete_branch);
+//		return response;
+//	}
 
 }
